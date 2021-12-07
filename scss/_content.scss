@@ -1,0 +1,46 @@
+main{
+    background-color: $light;
+    padding:20px;
+}
+section{
+
+    h3{
+        font-family:$mainFont;
+        color: $light;
+        font-size: $textMedium;
+    }
+
+    h1{
+        font-size: $textMedium;
+        $px-1:1em;
+    }
+    
+}
+
+
+.transform:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+    }
+
+.scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+    }
+
+@keyframes animateDiv{
+        0% {width: 500px;}
+        25% {width: 800px;}
+        50% {width: 1000px;}
+        75% {width: 800px;}
+        100% {width: 500px;}
+    }
+
+.animate{
+    background-color:#6e1c1c;
+    animation-name: animateDiv;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    }

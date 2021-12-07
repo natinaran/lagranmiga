@@ -1,0 +1,21 @@
+nav{
+    background-color: $warning;
+    display: $d-flex;
+    img{
+        width: 50px;
+    }
+    ul{
+        display: $d-flex;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            a{
+                color: black;
+                &:hover{
+                    color: #6e1c1c;
+                }
+            }
+        }
+    }
+}
+

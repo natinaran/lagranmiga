@@ -1,0 +1,50 @@
+//definimos variables globales
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// theme-color-variables bootstrap
+$primary:       #6e1c1c;
+$secondary:     #cea34e;
+$warning:       #e5cf9c;
+$danger:        #8e2f2f;
+$light:         #f1f1f1;
+$dark:          #000000;
+
+//margin padding
+$px-1:1em;
+$mx-1:1em;
+
+//display
+$d-flex: flex;
+
+//sizing
+$w-50:50%;
+$w-25:25%;
+
+//bucle
+@each $icono in tel, mail, direcc {
+    .#{$icono}-icon{
+        background-image: url(/img/#{$icono}.png);
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+        list-style: none;
+    }
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (min-width: 768px){
+    body{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 20vh 70vh 10vh;
+    }    
+    }
+    @media only screen and (min-width: 1200px){
+        body{
+    grid-template-columns: repeat(2,30%);
+    grid-template-rows: 20vh 70vh 10vh;
+        }
+    }
